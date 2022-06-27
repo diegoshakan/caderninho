@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @receivable %>
+
+<div>
+  <%= link_to "Edit this receivable", edit_receivable_path(@receivable) %> |
+  <%= link_to "Back to receivables", receivables_path %>
+
+  <%= button_to "Destroy this receivable", @receivable, method: :delete %>
+</div>

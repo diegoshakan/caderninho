@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Receivables</h1>
+
+<div id="receivables">
+  <% @receivables.each do |receivable| %>
+    <%= render receivable %>
+    <p>
+      <%= link_to "Show this receivable", receivable %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New receivable", new_receivable_path %>
